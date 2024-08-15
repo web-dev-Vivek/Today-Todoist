@@ -291,7 +291,7 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
-@media(max-width:750px){
+/*@media(max-width:750px){
     .navbar{
         display: none;
     }
@@ -299,4 +299,4 @@ input:checked + .slider:before {
 form{
     width: 450px;
     height: 475px;
-}
+}*/
