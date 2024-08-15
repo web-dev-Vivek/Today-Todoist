@@ -1,11 +1,11 @@
 :root {
-             --bg-color: #fff;
-            --navbar-color: #ffcad321;
-            --text-color1: black;
-            --text-color2: white;
-            --hover: #eae5e5;
-            
-        }
+    --bg-color: #fff;
+    --navbar-color: #ffcad321;
+    --text-color1: black;
+    --text-color2: white;
+    --hover: #eae5e5;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -15,152 +15,288 @@ body {
 
 .navbar {
     width: 280px;
-  background-color: var(--navbar-color);
-  height: 100vh;
-  padding-top: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
+    background-color: var(--navbar-color);
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-.nav1{
+
+.nav1 {
     display: flex;
-  align-items: center;
-  gap: 93px;
-  color: var(--text-color1);
-  justify-content: space-around;
-  font-size: 1.2em;
-  margin-bottom: 18px;
-  font-weight: bolder;
+    align-items: center;
+    gap: 93px;
+    color: var(--text-color1);
+    justify-content: space-around;
+    font-size: 1.2em;
+    margin-bottom: 18px;
+    font-weight: bolder;
 }
-.User,.icons{
+
+.User, .icons {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-.icons{
+
+.icons {
     gap: 9px;
-  font-size: 1.2em;
-  color: gray;
+    font-size: 1.2em;
+    color: gray;
 }
-.add-task p{
+
+.add-task p {
     width: 251px;
-  height: 36px;
-  margin: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 10px;
-  color: #c81313;
+    height: 36px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    color: #c81313;
 }
-.item{
+
+.item {
     width: 251px;
-  height: 37px;
-  margin: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 10px;
+    height: 37px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
 }
-.options{
+
+.hi {
     display: grid;
-  gap: 3px;
+    gap: 3px;
 }
-.add-task{
-    margin-bottom: 12px;
+
+.add-task {
+    margin-bottom: 6px;
 }
-.User:hover{
+
+.User:hover {
     background-color: var(--hover);
 }
-.icons i:hover{
+
+.icons i:hover {
     background-color: var(--hover);
 }
-.add-task p:hover{
+
+.add-task p:hover {
     background-color: var(--hover);
 }
-.item:hover{
+
+.item:hover {
     background-color: var(--hover);
 }
-.User{
+
+.User {
     border-radius: 6px;
-    margin-left:5px;
+    margin-left: 5px;
 }
-.icons i{
+
+.icons i {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
-.add-task p{
+
+.add-task p {
     border-radius: 6px;
 }
-.item{
+
+.item {
     border-radius: 6px;
     gap: 7px;
 }
+
 .item.active {
     transition: 0.3s ease;
     background-color: #e87c7c5e; /* Background color for active item */
     color: #880a0a; /* Optional: text color change */
 }
-.my_project{
+
+.my_project {
     display: flex;
-  align-items: center;
-  padding: 14px;
-  gap: 124px;
-  font-weight: bolder;
-  color: #5c5b5b;
+    align-items: center;
+    padding: 14px;
+    gap: 124px;
+    font-weight: bolder;
+    color: #5c5b5b;
 }
+
 .hello {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.my_project:hover .hello {
+main {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    margin-left: 280px;
+}
+
+.top .top1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 33px;
+}
+
+.p {
+    padding-left: 28vw;
+    width: 377px;
+    text-align: center;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    width: 299px;
+    padding-left: 2vw;
+    margin-bottom: 10px;
+}
+
+.p3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c21313;
+}
+
+.options {
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    width:282px;
+    background-color: white;
+    border-radius: 6px;
+
+}
+
+.options.show {
     opacity: 1;
     visibility: visible;
 }
-main{
-    width: 100%;
-  height: 100vh;
-  background: white;
-  margin-left: 280px;
+
+.option {
+    padding: 5px;
+    cursor: pointer;
 }
-.top .top1{
+
+.option:hover {
+    background-color: #ddd;
+    border-radius: 6px;
+}
+
+.center-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+  font-weight: 700;
+}
+.option{
     display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 33px;
+    align-items: center;
+    gap: 12px;
 }
-.p{
-padding-left: 28vw;
-  width: 377px;
-  text-align: center;
+.text1{
+    margin: 0px;
+    padding: 0px;
+    color: black;
 }
-.p1{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bolder;
-  margin: 0px;
-  margin-bottom: 10px;
+.text2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
 }
-.p2{
-    display: flex;
-  justify-content: center;
-  align-content: center;
-  font-size: 15px;
-  width: 299px;
-  padding-left: 2vw;
-  margin-bottom: 10px;
+/* Switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
-.p3{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #c21313;
+
+/* Hide the default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* Slider before: round switch knob */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* When checked, change background color */
+input:checked + .slider {
+    background-color: #df0808;
+}
+
+/* Move the switch knob to the right when checked */
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+@media(max-width:750px){
+    .navbar{
+        display: none;
+    }
+}
+form{
+    width: 450px;
+    height: 475px;
 }
