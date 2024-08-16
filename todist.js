@@ -47,3 +47,32 @@ document.addEventListener('DOMContentLoaded', function() {
         centerDiv.style.display = 'none';
     });
 });
+
+
+
+
+
+
+
+
+
+var blur = document.getElementById('option1');
+var navback = document.getElementById('navbar');
+var mainback = document.getElementById('background');
+var centerDiv = document.getElementById('centerDiv');
+
+blur.addEventListener('click', function() {
+    // Add the blur effect to navback and mainback
+    navback.classList.add('blurred');
+    mainback.classList.add('blurred');
+
+    // Ensure centerDiv is not affected by the blur
+    centerDiv.classList.add('no-blur');
+});
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@
     rel="stylesheet"/>
 </head>
 <body>
-    <nav style="cursor: pointer;" class="navbar">
+    <nav id="navbar" style="cursor: pointer;" class="navbar">
         <div class="nav1">
             <div style="height: 33.4px; width: 111.95px;" class="User">
                 <i style="margin-right: 8px; font-size: 30px; color: #1b1bd9;" class="ri-circle-fill"></i>
@@ -21,7 +21,9 @@
             </div>
             <div class="icons">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m6.585 15.388-.101.113c-.286.322-.484.584-.484 1h12c0-.416-.198-.678-.484-1l-.101-.113c-.21-.233-.455-.505-.7-.887-.213-.33-.355-.551-.458-.79-.209-.482-.256-1.035-.4-2.71-.214-3.5-1.357-5.5-3.857-5.5s-3.643 2-3.857 5.5c-.144 1.675-.191 2.227-.4 2.71-.103.239-.245.46-.457.79-.246.382-.491.654-.701.887Zm10.511-2.312c-.083-.341-.131-.862-.241-2.148-.113-1.811-.469-3.392-1.237-4.544C14.8 5.157 13.57 4.5 12 4.5c-1.571 0-2.8.656-3.618 1.883-.768 1.152-1.124 2.733-1.237 4.544-.11 1.286-.158 1.807-.241 2.148-.062.253-.13.373-.46.884-.198.308-.373.504-.57.723-.074.081-.15.166-.232.261-.293.342-.642.822-.642 1.557a1 1 0 0 0 1 1h3a3 3 0 0 0 6 0h3a1 1 0 0 0 1-1c0-.735-.35-1.215-.642-1.557-.082-.095-.158-.18-.232-.261-.197-.22-.372-.415-.57-.723-.33-.511-.398-.63-.46-.884ZM14 17.5h-4a2 2 0 1 0 4 0Z" clip-rule="evenodd"></path></svg>
+                <div  id="toggleButton">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19 4.001H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-12a2 2 0 0 0-2-2Zm-15 2a1 1 0 0 1 1-1h4v14H5a1 1 0 0 1-1-1v-12Zm6 13h9a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1h-9v14Z" clip-rule="evenodd"></path></svg>
+                </div>
             </div>
         </div>
         <div class="add-task">
@@ -61,7 +63,7 @@
             </div>
         </div>
     </nav>
-    <main>
+    <main id="background">
         <div class="top">
             <div class="top1"><p>View</p></div>
         </div>
@@ -72,18 +74,30 @@
                 <p>Add task</p>
             </div>
         </div>
-        <form id="centerDiv" class="center-popup" style="display: none; border-radius: 12px;">
+        
+        <div class="move">
+            <div style="padding: 6vh 0px 0px 29vw;">
+                <img src="https://d3ptyyxy2at9ui.cloudfront.net/assets/images/9b83bf5d1895df53ed06506fd3cd381c.png">
+            </div>
+            <div class="p">
+                <p class="p1">What do you need to get done today?</p>
+                <p class="p2">By default, tasks added here will be due today. Click + to add a task.</p>
+                <a class="p3">How to plan your day</a>
+            </div>
+        </div>
+    </main>
+    <form id="centerDiv" class="center-popup" style="display: none; border-radius: 12px; filter: none;">
                         <div style="position: fixed;
   display: flex;
   align-items: center;
-  gap: 17vw;
+  gap: 18vw;
   top: 8px;
   height: 37px;
   color: black;
   font-weight: bold;
   background: white;
   border-bottom: 2px solid black;
-  width: 474px;
+  width: 491px;
   left: 0px;
   padding-left: 16px;">
                         <div style="display: flex;
@@ -100,7 +114,7 @@
   overflow: auto;">
                         <div>
                             <p style="margin-top: 10px;
-  margin-bottom: 4px;">Name</p>
+  margin-bottom: 4px; font-weight: 700;">Name</p>
                             <input style="width: 436px;
   height: 32px;
   margin-left: 4px;" type="text">
@@ -108,9 +122,9 @@
                         <div>
                             <p style="margin: 0px;
   margin-top: 10px;
-  margin-bottom: 5px;">color</p>
+  margin-bottom: 5px;font-weight: 700;">color</p>
                             <select style="width: 447px;
-  height: 26px;
+  height: 36px;
   margin-left: 0px;
   background: transparent;
   border: 1px solid gray;" id="myDropdown" name="options">
@@ -141,7 +155,7 @@
                         </div>
                         <div>
 
-                            <p style="margin-bottom: 10px;">Workspace</p>
+                            <p style="margin-bottom: 10px;font-weight: 700;">Workspace</p>
                             <div style="display: flex;
   align-items: center;
   gap: 9px;
@@ -152,47 +166,52 @@
                                 <p>My Projects</p>
                             </div>
                         </div>
-                        <div>
+                        <div style="display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;">
                         <label class="switch">
     <input type="checkbox" id="toggleSwitch">
     <span class="slider"></span>
 </label>
 <p>Add to Favorites</p>
 </div>
-<div>
-    <p>View</p>
-    <div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none" viewBox="0 0 24 25" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Zm-.75 7c0-.276-.183-.5-.41-.5H7.91l-.074.008c-.191.043-.336.247-.336.492 0 .276.183.5.41.5h8.18l.074-.008c.191-.042.336-.246.336-.492Zm-.41 3.5c.227 0 .41.224.41.5 0 .246-.145.45-.336.492l-.073.008H7.909c-.226 0-.409-.224-.409-.5 0-.245.145-.45.336-.492l.073-.008h8.182Zm.41-7.5c0-.276-.183-.5-.41-.5H7.91l-.074.008c-.191.043-.336.247-.336.492 0 .276.183.5.41.5h8.18l.074-.008c.191-.042.336-.246.336-.492Z" clip-rule="evenodd"></path></svg>
-            <p>List</p>
+<div style="width: 450px;">
+    <p style="font-weight: 700;">View</p>
+    <div style="display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #221b1b1a;
+  border-radius: 9px;">
+        <div class="popup-icon">
+            <div>
+            <svg style="padding-left: 2px;" xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none" viewBox="0 0 24 25" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Zm-.75 7c0-.276-.183-.5-.41-.5H7.91l-.074.008c-.191.043-.336.247-.336.492 0 .276.183.5.41.5h8.18l.074-.008c.191-.042.336-.246.336-.492Zm-.41 3.5c.227 0 .41.224.41.5 0 .246-.145.45-.336.492l-.073.008H7.909c-.226 0-.409-.224-.409-.5 0-.245.145-.45.336-.492l.073-.008h8.182Zm.41-7.5c0-.276-.183-.5-.41-.5H7.91l-.074.008c-.191.043-.336.247-.336.492 0 .276.183.5.41.5h8.18l.074-.008c.191-.042.336-.246.336-.492Z" clip-rule="evenodd"></path></svg>
+            <p style="margin:0px;">List</p>
         </div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Zm-4.758 2.836C12.45 7.646 12.245 7.5 12 7.5c-.276 0-.5.183-.5.41v8.181l.008.074c.042.19.247.335.492.335.276 0 .5-.183.5-.409V7.91l-.008-.073ZM8 7.5c.245 0 .45.145.492.336l.008.073v8.182c0 .226-.224.41-.5.41-.245 0-.45-.145-.492-.336l-.008-.074V7.91c0-.226.224-.409.5-.409Zm8.492.336C16.45 7.646 16.245 7.5 16 7.5c-.276 0-.5.183-.5.41v8.181l.008.074c.042.19.247.335.492.335.276 0 .5-.183.5-.409V7.91l-.008-.073Z" clip-rule="evenodd"></path></svg>
-            <p>Board</p>
         </div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6Zm10 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-3-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-3-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7 8a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1H7Z" clip-rule="evenodd"></path></svg>
-            <p>Calender</p>
+        <div class="popup-icon">
+            <div>
+            <svg style="padding-left: 9px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Zm-4.758 2.836C12.45 7.646 12.245 7.5 12 7.5c-.276 0-.5.183-.5.41v8.181l.008.074c.042.19.247.335.492.335.276 0 .5-.183.5-.409V7.91l-.008-.073ZM8 7.5c.245 0 .45.145.492.336l.008.073v8.182c0 .226-.224.41-.5.41-.245 0-.45-.145-.492-.336l-.008-.074V7.91c0-.226.224-.409.5-.409Zm8.492.336C16.45 7.646 16.245 7.5 16 7.5c-.276 0-.5.183-.5.41v8.181l.008.074c.042.19.247.335.492.335.276 0 .5-.183.5-.409V7.91l-.008-.073Z" clip-rule="evenodd"></path></svg>
+            <p style="margin:0px;">Board</p>
         </div>
-        <div>
+        </div>
+        <div class="popup-icon">
+            <div>
+            <svg style="padding-left: 21px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6Zm10 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-3-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-3-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7 8a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1H7Z" clip-rule="evenodd"></path></svg>
+            <p style="margin:0px;">Calender</p>
+        </div>
+        </div>
+    </div>
+
+</div>
+<div style="font-size:14px;">
         <p>Layout is synced between teammates in shared projects.</p>
         <a href="https://todoist.com/help/articles/use-the-board-layout-in-todoist-AiAVsyEI" target="_blank">Learn more.</a>
     </div>
-    </div>
-</div>
                         </div>
                     </form>
-        <div class="move">
-            <div style="padding: 6vh 0px 0px 29vw;">
-                <img src="https://d3ptyyxy2at9ui.cloudfront.net/assets/images/9b83bf5d1895df53ed06506fd3cd381c.png">
-            </div>
-            <div class="p">
-                <p class="p1">What do you need to get done today?</p>
-                <p class="p2">By default, tasks added here will be due today. Click + to add a task.</p>
-                <a class="p3">How to plan your day</a>
-            </div>
-        </div>
-    </main>
     <script type="text/javascript" src="todist.js"></script>
 </body>
 </html>
