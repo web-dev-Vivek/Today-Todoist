@@ -20,10 +20,10 @@
                 </div>
             </div>
             <div class="icons">
+                <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m6.585 15.388-.101.113c-.286.322-.484.584-.484 1h12c0-.416-.198-.678-.484-1l-.101-.113c-.21-.233-.455-.505-.7-.887-.213-.33-.355-.551-.458-.79-.209-.482-.256-1.035-.4-2.71-.214-3.5-1.357-5.5-3.857-5.5s-3.643 2-3.857 5.5c-.144 1.675-.191 2.227-.4 2.71-.103.239-.245.46-.457.79-.246.382-.491.654-.701.887Zm10.511-2.312c-.083-.341-.131-.862-.241-2.148-.113-1.811-.469-3.392-1.237-4.544C14.8 5.157 13.57 4.5 12 4.5c-1.571 0-2.8.656-3.618 1.883-.768 1.152-1.124 2.733-1.237 4.544-.11 1.286-.158 1.807-.241 2.148-.062.253-.13.373-.46.884-.198.308-.373.504-.57.723-.074.081-.15.166-.232.261-.293.342-.642.822-.642 1.557a1 1 0 0 0 1 1h3a3 3 0 0 0 6 0h3a1 1 0 0 0 1-1c0-.735-.35-1.215-.642-1.557-.082-.095-.158-.18-.232-.261-.197-.22-.372-.415-.57-.723-.33-.511-.398-.63-.46-.884ZM14 17.5h-4a2 2 0 1 0 4 0Z" clip-rule="evenodd"></path></svg>
-                <div  id="toggleButton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19 4.001H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-12a2 2 0 0 0-2-2Zm-15 2a1 1 0 0 1 1-1h4v14H5a1 1 0 0 1-1-1v-12Zm6 13h9a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1h-9v14Z" clip-rule="evenodd"></path></svg>
-                </div>
+            </div>
+                
             </div>
         </div>
         <div class="add-task">
@@ -49,7 +49,7 @@
                                 <p class="text2">Plan and assign tasks</p>
                             </div>
                         </div>
-                        <div class="option">
+                        <div class="option" id="option2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.241 4.004h3.513c.554 0 1.004.448 1.004 1v9.638l-5.52-7.855V5.004c0-.552.449-1 1.003-1Zm4.844 15.4.048-.074a3.772 3.772 0 0 1-6.218.074L1.863 9.37a1.995 1.995 0 0 1 .493-2.786l2.878-2.007a2.012 2.012 0 0 1 2.795.49l.205.292v-.355c0-1.105.899-2 2.007-2h3.513c1.109 0 2.007.895 2.007 2v.361l.21-.298a2.012 2.012 0 0 1 2.796-.492l2.877 2.008a1.995 1.995 0 0 1 .493 2.785l-7.052 10.035Zm.676-12.295v9.589l5.554-7.903a.998.998 0 0 0-.247-1.393l-2.877-2.007a1.006 1.006 0 0 0-1.398.245L15.761 7.11ZM5.81 5.396 2.932 7.403a.998.998 0 0 0-.247 1.393L9.737 18.83a2.766 2.766 0 0 0 3.844.675 2.744 2.744 0 0 0 .678-3.83L7.207 5.64a1.006 1.006 0 0 0-1.398-.245Zm6.189 12.983a1.002 1.002 0 0 1-1.004-1c0-.552.45-1 1.004-1s1.003.448 1.003 1-.45 1-1.003 1Z" clip-rule="evenodd"></path></svg>
                             <div class="text">
                                 <p class="text1" >Browse templates</p>
@@ -63,6 +63,9 @@
             </div>
         </div>
     </nav>
+    <div  id="toggleButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19 4.001H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-12a2 2 0 0 0-2-2Zm-15 2a1 1 0 0 1 1-1h4v14H5a1 1 0 0 1-1-1v-12Zm6 13h9a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1h-9v14Z" clip-rule="evenodd"></path></svg>
+                </div>
     <main id="background">
         <div class="top">
             <div class="top1"><p>View</p></div>
@@ -75,18 +78,185 @@
             </div>
         </div>
         
-        <div class="move">
-            <div style="padding: 6vh 0px 0px 29vw;">
+        
+            <div id="left1" style="padding: 6vh 0px 0px 29vw;">
                 <img src="https://d3ptyyxy2at9ui.cloudfront.net/assets/images/9b83bf5d1895df53ed06506fd3cd381c.png">
             </div>
-            <div class="p">
+            <div id="left2" class="p">
                 <p class="p1">What do you need to get done today?</p>
                 <p class="p2">By default, tasks added here will be due today. Click + to add a task.</p>
                 <a class="p3">How to plan your day</a>
             </div>
-        </div>
+            <div style="display: none;
+  height: 690px;
+  width: 1080px;
+  background: whitesmoke;
+  position: absolute;
+  top: 10vh;
+  overflow: auto;
+  border-radius: 10px;
+  left: 29vw;padding: 0px;" id="popup1">
+                <div style="background: var(--navbar-color);
+  width: 250px;height: 690px;;">
+                    <div>
+                        <p style="display: flex;
+  justify-content: flex-start;
+  font-weight: 900;
+  color: black;
+  margin-left: 11px;
+  font-size: 18px;">Templates</p>
+                        <div style="display: flex;
+  align-items: center;">
+
+                            <svg style="position: absolute;
+  left: 17px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" class="hyjUkay"><path fill="currentColor" fill-rule="evenodd" d="M16.29 15.584a7 7 0 1 0-.707.707l3.563 3.563a.5.5 0 0 0 .708-.707l-3.563-3.563ZM11 17a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" clip-rule="evenodd"></path></svg>
+                            <input style="width: 10vw;
+  height: 3vh;
+  margin-left: 8px;
+  padding-left: 39px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 2px solid #8080805c;" type="text" name="" placeholder="Search all templates">
+                        </div>
+                        <div style="display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 9px;
+  background: #ff000014;
+  height: 33px;
+  width: 12vw;
+  margin-top: 10px;
+  border-radius: 6px;
+  color: #ac0606;">
+                            <svg style="margin-left: 6px;"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 0 1 7.079 14.559l.143-.187a8.91 8.91 0 0 1-.536.653l-.073.08-.117.124a8.4 8.4 0 0 1-.637.603l-.098.083c-.05.042-.1.083-.152.124l-.074.058c-.044.034-.087.068-.132.101l-.106.079c-.04.03-.08.058-.12.086l-.125.087-.049.032a8.919 8.919 0 0 1-.604.372l-.033.018-.064.035-.176.094-.055.028a8.001 8.001 0 0 1-.208.102l-.044.02c-.064.031-.13.061-.196.09l-.095.041-.13.054-.121.049a8.967 8.967 0 0 1-.507.18l-.095.03c-.075.024-.15.046-.225.068l-.03.008-.228.06-.07.017c-.273.066-.552.12-.835.16l-.12.017-.185.022-.108.011-.16.014-.143.01a6.961 6.961 0 0 1-.204.01l-.062.003A10.34 10.34 0 0 1 12 21h-.005l-.26-.004-.04-.001L12 21a8.95 8.95 0 0 1-.367-.007l-.204-.01-.144-.011-.16-.014-.106-.01-.186-.023-.12-.016a9.206 9.206 0 0 1-.836-.16l-.069-.018-.228-.06-.03-.008-.225-.067-.095-.03a9.838 9.838 0 0 1-.507-.181l-.121-.049-.13-.054-.095-.04-.197-.09-.043-.02c-.07-.034-.14-.068-.208-.103L7.874 20a5.937 5.937 0 0 1-.176-.094l-.064-.035-.033-.018a9.224 9.224 0 0 1-.604-.372c-.017-.01-.033-.022-.05-.033l-.124-.086-.12-.086-.107-.08c-.044-.032-.087-.066-.13-.1l-.076-.059-.15-.123c-.034-.027-.066-.055-.099-.083a9.688 9.688 0 0 1-.638-.603l-.116-.124-.073-.08a9.609 9.609 0 0 1-.347-.409l-.045-.057A9 9 0 0 1 12 3zm0 13c-2.82 0-4.978.519-5.94 1.36A7.985 7.985 0 0 0 12 20c2.302 0 4.44-.978 5.94-2.64C16.978 16.518 14.82 16 12 16zm0-12a8 8 0 0 0-6.561 12.578C6.742 15.472 9.253 15 12 15s5.258.472 6.562 1.577A8 8 0 0 0 12 4zm0 2.5a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5zm0 1a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5z"></path></svg>
+                            <p>My templates</p>
+                        </div>
+                        <div>
+                            <p style="display: flex;
+  margin-left: 10px;
+  font-weight: 900;">Categories</p>
+                            <div>
+                                <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M10.241 4.004h3.513c.554 0 1.004.448 1.004 1v9.638l-5.52-7.855V5.004c0-.552.449-1 1.003-1Zm4.844 15.4.048-.074a3.772 3.772 0 0 1-6.218.074L1.863 9.37a1.995 1.995 0 0 1 .493-2.786l2.878-2.007a2.012 2.012 0 0 1 2.795.49l.205.292v-.355c0-1.105.899-2 2.007-2h3.513c1.109 0 2.007.895 2.007 2v.361l.21-.298a2.012 2.012 0 0 1 2.796-.492l2.877 2.008a1.995 1.995 0 0 1 .493 2.785l-7.052 10.035Zm.676-12.295v9.589l5.554-7.903a.998.998 0 0 0-.247-1.393l-2.877-2.007a1.006 1.006 0 0 0-1.398.245L15.761 7.11ZM5.81 5.396 2.932 7.403a.998.998 0 0 0-.247 1.393L9.737 18.83a2.766 2.766 0 0 0 3.844.675 2.744 2.744 0 0 0 .678-3.83L7.207 5.64a1.006 1.006 0 0 0-1.398-.245Zm6.189 12.983a1.002 1.002 0 0 1-1.004-1c0-.552.45-1 1.004-1s1.003.448 1.003 1-.45 1-1.003 1Z" clip-rule="evenodd"></path></svg>
+                                    <p>Featured</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M4.001 6v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-12a2 2 0 0 0-2 2Zm2 13a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-12Zm2.5-1.5a.5.5 0 0 1-.5-.5V7a.5.5 0 1 1 1 0v10a.5.5 0 0 1-.5.5Zm3-9.5a.5.5 0 1 0 0 1h5a.5.5 0 0 0 0-1h-5Zm-.5 4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm.5 3a.5.5 0 1 0 0 1h5a.5.5 0 1 0 0-1h-5Z" clip-rule="evenodd"></path></svg>
+                                    <p>Setups</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" d="M12.253 16.5 12 16.352l-.253.148-3.512 2.06a.75.75 0 0 1-1.11-.813l.892-3.913.067-.292-.227-.197-3.034-2.634a.75.75 0 0 1 .423-1.313l4.037-.37.294-.027.119-.27 1.616-3.71a.75.75 0 0 1 1.376 0l1.616 3.71.119.27.294.027 4.037.37a.75.75 0 0 1 .423 1.313l-3.034 2.634-.227.197.067.292.892 3.913a.75.75 0 0 1-1.11.814l-3.512-2.06Z"></path></svg>
+                                    <p>Popular</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M8 7.002v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2Zm7 0v-1a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1h6Zm-10 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2H5v-2Zm0 3h14v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5Z" clip-rule="evenodd"></path></svg>
+                                    <p>Work</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 13.5c3.323 0 5.803.697 7.427 2.119A2.5 2.5 0 0 1 17.78 20H6.22a2.5 2.5 0 0 1-1.647-4.381C6.197 14.197 8.677 13.5 12 13.5zm0 1c-3.102 0-5.353.633-6.768 1.871A1.5 1.5 0 0 0 6.22 19h11.56a1.502 1.502 0 0 0 .989-2.629C17.352 15.133 15.101 14.5 12 14.5zM12 4c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>
+                                    <p>Personal</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M5.06 10 12 13.856 18.94 10 12 6.144 5.06 10Zm-1.273-.437a.5.5 0 0 0 0 .874L6 11.667v4.715a1 1 0 0 0 .553.894l5 2.5a1 1 0 0 0 .894 0l5-2.5a1 1 0 0 0 .553-.894v-4.715l1.475-.82V14.5a.5.5 0 0 0 1 0V10h-.005a.495.495 0 0 0-.257-.437L12.486 5.27a1 1 0 0 0-.972 0L3.787 9.563ZM17 12.223l-4.514 2.507a1 1 0 0 1-.972 0L7 12.222v4.16l5 2.5 5-2.5v-4.16Z" clip-rule="evenodd"></path></svg>
+                                    <p>Education</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="m8.001 2 1 1 1 1V2h4v2l1-1 1-1h2l-.286 1-1.483 5.19a1.5 1.5 0 0 1-.046 2.645L17.78 18H18a2 2 0 0 1 2 2v1h-16v-1a2 2 0 0 1 2-2h.222l1.593-7.165A1.5 1.5 0 0 1 7.77 8.19L6.287 3 6 2h2Zm.754 6h6.492l1.428-5h-.26l-1.707 1.707A1 1 0 0 1 13.001 4V3h-2v1a1 1 0 0 1-1.707.707L7.587 3h-.26l1.428 5Zm-.254 1a.5.5 0 1 0 0 1h7a.5.5 0 1 0 0-1h-7Zm-1.253 9 1.555-7H15.2l1.555 7H7.248ZM18 19h-12a1 1 0 0 0-1 1h14a1 1 0 0 0-1-1Z" clip-rule="evenodd"></path></svg>
+                                    <p>Management</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M14.001 4.071a7.004 7.004 0 0 1 5.93 5.93H14V4.07Zm7 6.93a8.004 8.004 0 0 0-8-8v8h8Zm-9.5 1.5h8.5a8.501 8.501 0 0 1-17 0 8.501 8.501 0 0 1 8.5-8.5v8.5Zm0 1h7.434A7.501 7.501 0 0 1 4 12.5a7.501 7.501 0 0 1 6.5-7.435V13.5h1Z" clip-rule="evenodd"></path></svg>
+                                    <p>Marketing & Sales</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.146 9.355a.5.5 0 1 1 .708-.707l3 3a.5.5 0 0 1 0 .707l-3 3a.5.5 0 0 1-.708-.707L9.793 12 7.146 9.355ZM11 15.501a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Z"></path><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Z" clip-rule="evenodd"></path></svg>
+                                    <p>Development</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.146 9.355a.5.5 0 1 1 .708-.707l3 3a.5.5 0 0 1 0 .707l-3 3a.5.5 0 0 1-.708-.707L9.793 12 7.146 9.355ZM11 15.501a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Z"></path><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Z" clip-rule="evenodd"></path></svg>
+                                    <p>Design & Product</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.146 9.355a.5.5 0 1 1 .708-.707l3 3a.5.5 0 0 1 0 .707l-3 3a.5.5 0 0 1-.708-.707L9.793 12 7.146 9.355ZM11 15.501a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Z"></path><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Z" clip-rule="evenodd"></path></svg>
+                                    <p>Customer Support</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><g fill="currentColor" fill-rule="evenodd"><path fill-rule="nonzero" d="M14.505 19.09c.345.617.733.84 1.464.842.653.001 1.417-.43 2.015-1.104C19.418 17.173 20 15.383 20 12.23 20 7.679 16.413 4 12 4s-8 3.68-8 8.23c0 2.465.59 4.183 1.727 4.675.765.332 1.37.33 2.306.068.175-.049.217-.061.685-.207 1.168-.362 1.85-.503 2.761-.483 1.595.022 2.237.71 2.772 2.192l.028.078c.099.273.157.414.226.536zm-.873.488c-.528-.943-.44-2.271-2.166-2.295-2.407-.053-3.783 1.558-6.136.54C3.467 17.017 3 14.459 3 12.23 3 7.133 7.03 3 12 3s9 4.133 9 9.23c0 3.528-.734 5.492-2.26 7.253-.678.764-1.693 1.45-2.773 1.449-1.08-.003-1.807-.411-2.335-1.354z"></path><path d="M11.909 7.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3.214 1.17a1 1 0 1 1 1.286-1.532 1 1 0 0 1-1.286 1.532zm1.71 2.962a1 1 0 1 1 1.97-.348 1 1 0 0 1-1.97.348zM16.24 15a1 1 0 1 1 1.732 1 1 1 0 0 1-1.732-1zm-9.254-3.368a1 1 0 1 1-1.97-.348 1 1 0 0 1 1.97.348zm1.71-2.962A1 1 0 1 1 7.41 7.138 1 1 0 0 1 8.695 8.67z"></path></g></svg>
+                                    <p>Creative</p>
+                                </div>
+                                 <div class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M17.333 4.001A2.667 2.667 0 0 1 20 6.668v10.667A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.335V6.668A2.667 2.667 0 0 1 6.667 4h10.666Zm-.083 1H6.75a1.75 1.75 0 0 0-1.745 1.62L5 6.75v10.5a1.75 1.75 0 0 0 1.62 1.745l.13.005h10.5a1.75 1.75 0 0 0 1.745-1.62l.005-.13v-10.5a1.75 1.75 0 0 0-1.62-1.745l-.13-.005Zm-4.758 2.836C12.45 7.646 12.245 7.5 12 7.5c-.276 0-.5.183-.5.41v8.181l.008.074c.042.19.247.335.492.335.276 0 .5-.183.5-.409V7.91l-.008-.073ZM8 7.5c.245 0 .45.145.492.336l.008.073v8.182c0 .226-.224.41-.5.41-.245 0-.45-.145-.492-.336l-.008-.074V7.91c0-.226.224-.409.5-.409Zm8.492.336C16.45 7.646 16.245 7.5 16 7.5c-.276 0-.5.183-.5.41v8.181l.008.074c.042.19.247.335.492.335.276 0 .5-.183.5-.409V7.91l-.008-.073Z" clip-rule="evenodd"></path></svg>
+                                    <p>Boards</p>
+                                </div>
+                                 <div style="border-bottom: 2px solid #8080806e;
+  padding-bottom: 42px;
+  width: 232px;" class="Categories">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true"><mask id="bullseye-outline-24-icon_svg__a" fill="#fff"><path fill-rule="evenodd" d="M12.001 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm0 1a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-4a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 1a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" clip-rule="evenodd"></path></mask><path fill="currentColor" fill-rule="evenodd" d="M12.001 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm0 1a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-4a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 1a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" clip-rule="evenodd"></path><path fill="currentColor" d="M19.001 12a7 7 0 0 1-7 7v2a9 9 0 0 0 9-9h-2Zm-7-7a7 7 0 0 1 7 7h2a9 9 0 0 0-9-9v2Zm-7 7a7 7 0 0 1 7-7V3a9 9 0 0 0-9 9h2Zm7 7a7 7 0 0 1-7-7h-2a9 9 0 0 0 9 9v-2Zm8-7a8 8 0 0 1-8 8v2c5.523 0 10-4.477 10-10h-2Zm-8-8a8 8 0 0 1 8 8h2c0-5.523-4.477-10-10-10v2Zm-8 8a8 8 0 0 1 8-8V2c-5.523 0-10 4.477-10 10h2Zm8 8a8 8 0 0 1-8-8h-2c0 5.523 4.477 10 10 10v-2Zm4-8a4 4 0 0 1-4 4v2a6 6 0 0 0 6-6h-2Zm-4-4a4 4 0 0 1 4 4h2a6 6 0 0 0-6-6v2Zm-4 4a4 4 0 0 1 4-4V6a6 6 0 0 0-6 6h2Zm4 4a4 4 0 0 1-4-4h-2a6 6 0 0 0 6 6v-2Zm5-4a5 5 0 0 1-5 5v2a7 7 0 0 0 7-7h-2Zm-5-5a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7v2Zm-5 5a5 5 0 0 1 5-5V5a7 7 0 0 0-7 7h2Zm5 5a5 5 0 0 1-5-5h-2a7 7 0 0 0 7 7v-2Zm1-5a1 1 0 0 1-1 1v2a3 3 0 0 0 3-3h-2Zm-1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3v2Zm-1 1a1 1 0 0 1 1-1V9a3 3 0 0 0-3 3h2Zm1 1a1 1 0 0 1-1-1h-2a3 3 0 0 0 3 3v-2Z" mask="url(#bullseye-outline-24-icon_svg__a)"></path></svg>
+                                    <p>2024 Goals</p>
+                                </div>
+                                <div style="margin-top: 11px;" class="Categories">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M10 20.086a1 1 0 0 0 1.707.707L14.5 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h5v2.086ZM14.086 17 11 20.086V17H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-4.914Z" clip-rule="evenodd"></path></svg>
+                                    <a target="_blank" href="https://doist.typeform.com/to/gLBlkeWI">Send Feedbak</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+               <div id="overlay1"></div>
+
+                <div id="main" style="background: white;
+  ">
+                    <div style="display: flex;
+  align-items: center;
+  gap: 30vw;
+  border-bottom: 2px solid gray;
+  width: 829px;">
+                        <p style="margin-left: 15px;
+  width: 10vw;
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 11px;
+">My templates</p>
+                    <button id="closePopup1" style="border: none;background: transparent;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="currentColor" d="M5.146 5.146a.5.5 0 0 1 .708 0L12 11.293l6.146-6.147a.5.5 0 0 1 .638-.057l.07.057a.5.5 0 0 1 0 .708L12.707 12l6.147 6.146a.5.5 0 0 1 .057.638l-.057.07a.5.5 0 0 1-.708 0L12 12.707l-6.146 6.147a.5.5 0 0 1-.638.057l-.07-.057a.5.5 0 0 1 0-.708L11.293 12 5.146 5.854a.5.5 0 0 1-.057-.638z"></path></svg></button>
+
+                    </div>
+                    <div>
+                        <p style="font-size: 20px;
+  display: flex;
+  margin-left: 18px;
+  margin-top: 8px;
+  font-weight: 900;">Start here</p>
+                        <div id="template-container">
+                            <div class="template-item" >
+                                <div class="template-item1" >
+                                    <div id="circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5.167 18c0 7.456 6.044 13.5 13.5 13.5 7.455 0 13.5-6.044 13.5-13.5s-6.045-13.5-13.5-13.5c-7.456 0-13.5 6.044-13.5 13.5Zm25.5 0c0 6.627-5.373 12-12 12-6.628 0-12-5.373-12-12s5.372-12 12-12c6.627 0 12 5.373 12 12Zm-12.14 6.75c.706 0 1.203-.532 1.203-1.275 0-.752-.497-1.284-1.203-1.284-.706 0-1.212.532-1.212 1.284 0 .743.506 1.275 1.212 1.275Zm-2.12-9.942h-1.49c.095-1.98 1.351-3.558 3.802-3.558 2.197 0 3.697 1.43 3.697 3.32 0 1.44-.706 2.458-1.822 3.164-1.108.688-1.422 1.201-1.422 2.164v.597h-1.526v-.844c-.009-1.21.55-2.036 1.744-2.788 1.012-.651 1.404-1.23 1.404-2.21 0-1.138-.837-1.972-2.136-1.972-1.317 0-2.154.816-2.25 2.127Z" clip-rule="evenodd"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="template-item2">
+                                    <p class="p11">Learn about templates</p>
+                                    <p class="p22">Find out maore about how to use templates in Todoist.</p>
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <div class="template-item1">
+                                    <div ><svg width="84" height="84"><circle cx="42" cy="42" r="41.5" class="GaGIhAM" stroke-width="1" fill="none"></circle><circle cx="42" cy="42" r="41.5" class="pxu5JrR" stroke-width="1" fill="none" stroke-dasharray="260.75219024795285" stroke-dashoffset="260.75219024795285" stroke-linecap="round"></circle><circle cx="42" cy="42" r="40.75" class="xPO8d1N" fill="none" stroke-width="0.25"></circle></svg></div>
+                                </div>
+                                <div class="template-item2">
+                                    <p class="p11">Upload Template</p>
+                                    <p class="p22">Drag and drop a CSV file and start importing your template data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+       
     </main>
-    <form id="centerDiv" class="center-popup" style="display: none; border-radius: 12px; filter: none;">
+    <div id="overlay"></div>
+    <form id="centerDiv" class="center-popup" style="display: none; border-radius: 12px; filter: none; z-index: 9;">
                         <div style="position: fixed;
   display: flex;
   align-items: center;

@@ -56,19 +56,204 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-var blur = document.getElementById('option1');
-var navback = document.getElementById('navbar');
-var mainback = document.getElementById('background');
-var centerDiv = document.getElementById('centerDiv');
+// var blur = document.getElementById('option1');
+// var navback = document.getElementById('navbar');
+// var mainback = document.getElementById('background');
+// var centerDiv = document.getElementById('centerDiv');
 
-blur.addEventListener('click', function() {
-    // Add the blur effect to navback and mainback
-    navback.classList.add('blurred');
-    mainback.classList.add('blurred');
+// blur.addEventListener('click', function() {
+//     // Add the blur effect to navback and mainback
+//     navback.classList.add('blurred');
+//     mainback.classList.add('blurred');
 
-    // Ensure centerDiv is not affected by the blur
-    centerDiv.classList.add('no-blur');
+//     // Ensure centerDiv is not affected by the blur
+//     centerDiv.classList.add('no-blur');
+// });
+
+
+
+
+var slide = document.getElementById('toggleButton');
+var nav = document.getElementById('navbar');
+var main = document.getElementById('background');
+var left1 = document.getElementById('left1');
+var left2 = document.getElementById('left2');
+
+var isToggled = false; // Initial state
+
+function toggleStyles() {
+    if (!isToggled) {
+        // Apply styles
+        nav.style.display = 'none';
+        main.style.marginLeft = '0px';
+        left1.style.paddingLeft = '39vw';
+        left2.style.paddingLeft = '37vw';
+        slide.style.position = 'absolute';
+        slide.style.left = '0px';
+    } else {
+        // Revert styles
+        nav.style.display = '';
+        main.style.marginLeft = '';
+        left1.style.paddingLeft = '29vw'; // Revert back to 29vw
+        left2.style.paddingLeft = '';
+        slide.style.position = '';
+        slide.style.left = '';
+    }
+
+    // Toggle the state
+    isToggled = !isToggled;
+}
+
+// Toggle styles on button click
+slide.addEventListener('click', toggleStyles);
+
+// Toggle styles on "M" key press
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'M' || event.key === 'm') {
+        toggleStyles();
+    }
 });
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const addIcon = document.getElementById('addIcon');
+        const optionsDiv = document.getElementById('optionsDiv');
+        const myProjectDiv = document.querySelector('.my_project');
+        const option2 = document.getElementById('option2');
+        const popup1 = document.getElementById('popup1');
+        const closePopup1 = document.getElementById('closePopup1');
+
+        // Function to show the options div
+        addIcon.addEventListener('click', function(event) {
+            optionsDiv.classList.add('show');
+            event.stopPropagation(); // Prevent the click event from propagating to the document
+        });
+
+        // Function to hide the options div when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!myProjectDiv.contains(event.target) && optionsDiv.classList.contains('show')) {
+                optionsDiv.classList.remove('show');
+            }
+        });
+
+        // Prevent the click event inside the options div from hiding it
+        optionsDiv.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+
+        // Show the centered div when "Option 1" is clicked
+        option2.addEventListener('click', function() {
+            popup1.style.display = 'flex';
+            optionsDiv.classList.remove('show'); // Hide the options div after selecting an option
+        });
+
+        // Close the centered div when the "Close" button is clicked
+        closePopup1.addEventListener('click', function() {
+            popup1.style.display = 'none';
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+    document.addEventListener('click', function(event) {
+    var div = document.getElementById('popup1');
+
+    // Check if the clicked target is outside the div
+    if (!div.contains(event.target)) {
+        div.style.display = 'none';
+        event.stopPropagation();
+    }
+});
+
+
+
+
+
+
+
+    document.addEventListener('click', function(event) {
+    var div = document.getElementById('centerDiv');
+
+    // Check if the clicked target is outside the div
+    if (!div.contains(event.target)) {
+        div.style.display = 'none';
+        event.stopPropagation();
+    }
+});
+
+
+
+
+
+
+
+
+
+    var openPopupButton = document.getElementById('option2');
+var closePopupButton = document.getElementById('closePopup1');
+var popup = document.getElementById('popup1');
+var overlay = document.getElementById('overlay');
+
+// Open the popup
+openPopupButton.addEventListener('click', function() {
+    overlay.style.display = 'flex';
+    popup.style.display = 'flex';
+});
+
+// Close the popup
+closePopupButton.addEventListener('click', function() {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+});
+
+// Close the popup when clicking on the overlay
+overlay.addEventListener('click', function() {
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+});
+
+
+
+
+     var openPopupButton1 = document.getElementById('option1');
+    var closePopupButton1 = document.getElementById('closePopup');
+    var popup1 = document.getElementById('centerDiv');
+    var overlay1 = document.getElementById('overlay');
+
+    // Open the popup
+    openPopupButton1.addEventListener('click', function() {
+        overlay1.style.display = 'flex';
+        popup1.style.display = 'flex';
+    });
+
+    // Close the popup
+    closePopupButton1.addEventListener('click', function() {
+        overlay1.style.display = 'none';
+        popup1.style.display = 'none';
+    });
+
+    // Close the popup when clicking on the overlay
+    overlay1.addEventListener('click', function() {
+        overlay1.style.display = 'none';
+        popup1.style.display = 'none';
+    });
+
+
 
 
 

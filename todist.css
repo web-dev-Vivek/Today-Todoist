@@ -22,16 +22,22 @@ body {
     top: 0;
     left: 0;
 }
-
+#toggleButton{
+    position: relative;
+  left: 245px;
+  top: 22px;
+  height: 30px;
+}
 .nav1 {
     display: flex;
-    align-items: center;
-    gap: 93px;
-    color: var(--text-color1);
-    justify-content: space-around;
-    font-size: 1.2em;
-    margin-bottom: 18px;
-    font-weight: bolder;
+  align-items: center;
+  gap: 98px;
+  color: var(--text-color1);
+  justify-content: space-around;
+  font-size: 1.2em;
+  margin-bottom: 18px;
+  font-weight: bolder;
+  margin-right: 41px;
 }
 
 .User, .icons {
@@ -138,7 +144,7 @@ body {
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 96vh;
     background: white;
     margin-left: 280px;
 }
@@ -325,4 +331,122 @@ form{
 .no-blur {
     filter: none;
 }
-    
+ #popup1 {
+            display: none; /* Initially hidden */
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            z-index: 2
+        }
+        #popup11 {
+           
+            cursor: pointer;
+        }
+    .Categories{
+        display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 5px;
+  height: 30px;
+    }
+#template-container{
+    height: 216px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.template-item{
+    height: 210px;
+  width: 282px;
+  border-radius: 9px;
+  margin-left: 22px;
+  border: 2px solid #0000004f;
+}
+.template-item1{
+    height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7909014;
+  border-bottom: 3px solid #0000004f;
+  position: absolute;
+  z-index: 9;
+  width: 284px;
+}
+.circle{
+    width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #80808038;
+  border-radius: 50%;
+}
+.template-item2{
+    height: 73px;
+  position: absolute;
+  width: 282px;
+  top: 252px;
+  background: white;
+  border-radius: 7px;
+}
+.p11{
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 12px;
+  margin-bottom: 0px;
+  width: 200px;
+  margin-top: 5px;
+}
+.p22{
+   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 185px;
+  height: 39px;
+  margin-top: 0px;
+  padding-left: 12px;
+  font-size: 12px;
+    width: auto;
+    white-space: normal; /* This ensures text wraps to the next line */
+    word-wrap: break-word; /* Break words when necessary to avoid overflow */
+    word-break: break-all; /* This breaks long words to fit within the div */
+    text-align: left; /* Ensure the text is aligned to the left */
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Slightly dark background */
+    z-index: 1;
+}
+#overlay1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Slightly dark background */
+    z-index: 1;
+}
+.image-edit{
+    width: 40px;
+    height: 40px;
+}
+#circle{
+    width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #00000017;
+}
