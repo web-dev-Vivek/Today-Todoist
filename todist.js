@@ -83,16 +83,23 @@ var isToggled = false; // Initial state
 
 function toggleStyles() {
     if (!isToggled) {
-        // Apply styles
-        nav.style.display = 'none';
+        // Apply styles to slide and hide navbar
+        nav.style.transform = 'translateX(-100%)'; // Move nav to the left
+        setTimeout(function() {
+            nav.style.display = 'none'; // Hide after transition
+        }, 500);
+        
         main.style.marginLeft = '0px';
         left1.style.paddingLeft = '39vw';
         left2.style.paddingLeft = '37vw';
         slide.style.position = 'absolute';
         slide.style.left = '0px';
     } else {
-        // Revert styles
-        nav.style.display = '';
+        // Revert styles to show navbar
+        nav.style.display = ''; // Make navbar visible
+        setTimeout(function() {
+            nav.style.transform = 'translateX(0)'; // Slide navbar back to original position
+        }, 10); // Trigger transition
         main.style.marginLeft = '';
         left1.style.paddingLeft = '29vw'; // Revert back to 29vw
         left2.style.paddingLeft = '';
@@ -259,5 +266,40 @@ overlay.addEventListener('click', function() {
 
 
 
+    document.getElementById("add-task1").addEventListener("click", function() {
+    var div2 = document.getElementById("add-task-popup");
+    div2.style.display = "block";
+});
 
 
+
+
+
+
+document.getElementById("add-task1").addEventListener("click", function() {
+    var div2 = document.getElementById("add-task-popup");
+    div2.style.display = "block";
+});
+
+document.addEventListener("click", function(event) {
+    var div2 = document.getElementById("add-task-popup");
+    var div1 = document.getElementById("add-task1");
+    
+    if (div2.style.display === "block" && !div2.contains(event.target) && !div1.contains(event.target)) {
+        div2.style.display = "none";
+    }
+});
+
+
+
+
+
+
+
+
+var close = document.getElementById("close");
+var to_close = document.getElementById("add-task-popup");
+
+close.addEventListener('click', function() {
+    to_close.style.display = 'none';
+});
