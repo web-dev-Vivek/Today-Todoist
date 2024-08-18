@@ -366,3 +366,27 @@ clean.addEventListener('click', function() {
 
 
 
+
+ // JavaScript to handle the functionality
+        var inbox = document.getElementById('inbox');
+        var second_background = document.getElementById('background1');
+        
+        inbox.addEventListener('click', function() {
+            // Hide background2 and show background1
+            document.getElementById('background').style.display = 'none';
+            second_background.style.display = 'block';
+        });
+        
+        var background = document.getElementById('background');
+        var today = document.getElementById('today');
+        
+        today.addEventListener('click', function() {
+            // Hide background1 and show background2
+            document.getElementById('background1').style.display = 'none';
+            background.style.display = 'block';
+        });
+
+
+
+
+
