@@ -303,3 +303,66 @@ var to_close = document.getElementById("add-task-popup");
 close.addEventListener('click', function() {
     to_close.style.display = 'none';
 });
+
+
+
+
+
+
+// Show elm2 when elm1 is clicked
+document.getElementById("add-task2").addEventListener("click", function(event) {
+    var elm2 = document.getElementById("add-task-popup1");
+    elm2.style.display = "block";
+    event.stopPropagation(); // Prevent this event from triggering the document click listener
+});
+
+// Hide elm2 when clicking outside of it
+document.addEventListener("click", function(event) {
+    var elm2 = document.getElementById("add-task-popup1");
+
+    // Check if elm2 is visible and the click happened outside of elm2
+    if (elm2.style.display === "block" && !elm2.contains(event.target)) {
+        elm2.style.display = "none";
+    }
+});
+
+// Prevent elm2 from closing when clicking inside of it
+document.getElementById("add-task-popup1").addEventListener("click", function(event) {
+    event.stopPropagation();
+});
+
+
+
+var clean = document.getElementById('add-task2');
+var item1 = document.getElementById('left1');
+var item2 = document.getElementById('left2');
+
+clean.addEventListener('click', function() {
+    item1.style.display = 'none';
+    item2.style.display = 'none';
+});
+
+
+
+
+
+ // Get the reference to the div and the document
+        var targetDiv = document.getElementById('add-task-popup1');
+        var shghht = document.getElementById('left1');
+        var iuhiu = document.getElementById('left2');
+        document.addEventListener('click', function(event) {
+            // Check if the click happened outside the div
+            if (!targetDiv.contains(event.target)) {
+                shghht.style.display = 'block'
+                iuhiu.style.display = 'block'
+            }
+        });
+
+        // Optional: Prevent the style change when clicking inside the div
+        targetDiv.addEventListener('click', function(event) {
+            event.stopPropagation(); // Stops the click event from propagating to the document
+        });
+
+
+
+
