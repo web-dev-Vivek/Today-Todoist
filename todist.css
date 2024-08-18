@@ -360,7 +360,7 @@ form{
 }
 .template-item{
     height: 210px;
-  width: 282px;
+  width: 235px;
   border-radius: 9px;
   margin-left: 22px;
   border: 2px solid #0000004f;
@@ -374,7 +374,7 @@ form{
   border-bottom: 3px solid #0000004f;
   position: absolute;
   z-index: 9;
-  width: 284px;
+  width: 235px;
 }
 .circle{
     width: 100px;
@@ -388,7 +388,7 @@ form{
 .template-item2{
     height: 73px;
   position: absolute;
-  width: 282px;
+  width: 233px;
   top: 252px;
   background: white;
   border-radius: 7px;
@@ -438,8 +438,8 @@ form{
     z-index: 1;
 }
 .image-edit{
-    width: 40px;
-    height: 40px;
+    width: 125px;
+  height: 122px;
 }
 #circle{
     width: 100px;
@@ -449,4 +449,23 @@ form{
   align-items: center;
   border-radius: 50%;
   background: #00000017;
+}
+#tt{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 17px;
+  padding-right: 11px;
+  font-weight: 900;
+  height: 19px;
+  padding-top: 17px;
+}
+#tt1{
+    display: flex;
+  padding-left: 17px;
+  font-size: 15px;
+  padding-bottom: 0px;
+}
+#template-second{
+    margin-top: 12px;
 }
