@@ -473,7 +473,7 @@ form{
 }
 #add-task-popup{
     width: 33vw;
-  height: 31vh;
+  height: 23vh;
   background-color: white;
   position: absolute;
   top: 21%;
@@ -520,4 +520,64 @@ form{
   margin-left: 280px;
   position: absolute;
   display: none;
+}
+#input1:focus,#input2:focus{
+ outline: none;
+}
+#Search-popup{
+   position: absolute;
+  left: 20%;
+  top: 25%;
+  width: 34vw;
+  background: white;
+  height: 48vh;
+  box-shadow: 0px 0px 39px gray;
+  border-radius: 9px;
+  overflow: auto;
+
+}
+#Search-popup div input{
+    width: 100%;
+  height: 4vh;
+  font-size: 19px;
+  border: none;
+  padding-left: 5px;
+}
+#Search-popup div input:focus{
+    outline: none;
+
+}
+.title-style{
+    font-size: 14px;
+  padding-left: 10px;
+  color: #625f5f;
+  margin-bottom: 0px;
+}
+.title-item{
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 14px;
+  height: 32px;
+  margin-bottom: 3px;
+}
+.para-style{
+    padding-left: 6px;
+}
+#Search-popup{
+    display:none;
+}
+.task-list{
+    position: ;
+    display: none;
+    width: 60vw;
+  background: transparent;
+  left: 130px;
+  position: relative;
+}
+.task-item{
+    border-bottom: 1px solid gray;
+  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
