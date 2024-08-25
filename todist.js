@@ -56,72 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// var blur = document.getElementById('option1');
-// var navback = document.getElementById('navbar');
-// var mainback = document.getElementById('background');
-// var centerDiv = document.getElementById('centerDiv');
-
-// blur.addEventListener('click', function() {
-//     // Add the blur effect to navback and mainback
-//     navback.classList.add('blurred');
-//     mainback.classList.add('blurred');
-
-//     // Ensure centerDiv is not affected by the blur
-//     centerDiv.classList.add('no-blur');
-// });
-
-
-
-
-// var slide = document.getElementById('toggleButton');
-// var nav = document.getElementById('navbar');
-// var main = document.getElementById('background');
-// var left1 = document.getElementById('left1');
-// var left2 = document.getElementById('left2');
-
-// var isToggled = false; // Initial state
-
-// function toggleStyles() {
-//     if (!isToggled) {
-//         // Apply styles to slide and hide navbar
-//         nav.style.transform = 'translateX(-100%)'; // Move nav to the left
-//         setTimeout(function() {
-//             nav.style.display = 'none'; // Hide after transition
-//         }, 500);
-        
-//         main.style.marginLeft = '0px';
-//         left1.style.paddingLeft = '39vw';
-//         left2.style.paddingLeft = '37vw';
-//         slide.style.position = 'absolute';
-//         slide.style.left = '0px';
-//     } else {
-//         // Revert styles to show navbar
-//         nav.style.display = ''; // Make navbar visible
-//         setTimeout(function() {
-//             nav.style.transform = 'translateX(0)'; // Slide navbar back to original position
-//         }, 10); // Trigger transition
-//         main.style.marginLeft = '';
-//         left1.style.paddingLeft = '29vw'; // Revert back to 29vw
-//         left2.style.paddingLeft = '';
-//         slide.style.position = '';
-//         slide.style.left = '';
-//     }
-
-//     // Toggle the state
-//     isToggled = !isToggled;
-// }
-
-// // Toggle styles on button click
-// slide.addEventListener('click', toggleStyles);
-
-// // Toggle styles on "M" key press
-// document.addEventListener('keydown', function(event) {
-//     if (event.key === 'M' || event.key === 'm') {
-//         toggleStyles();
-//     }
-// });
-
-
 
 
 
@@ -540,6 +474,29 @@ a11.addEventListener('click', function(event) {
     inputField11.style.display = 'none';
   }
 });
+
+
+
+
+
+
+
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle('hidden');
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 

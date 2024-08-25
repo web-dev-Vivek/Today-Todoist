@@ -20,9 +20,12 @@ body {
     padding-top: 20px;
     position: fixed;
     top: 0;
-    transition: 0.5s ease;
-     transform: translateX(0);
+    transition: transform 0.3s ease;
     left: 0;
+
+}
+.navbar.hidden {
+    transform: translateX(-100%); /* Slide the navbar out of view */
 }
 #toggleButton{
     position: relative;
