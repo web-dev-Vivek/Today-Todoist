@@ -32,6 +32,7 @@ body {
   left: 245px;
   top: 22px;
   height: 30px;
+  transition: transform 0.3s ease;
 }
 .nav1 {
     display: flex;
@@ -575,7 +576,7 @@ form{
     display: none;
     width: 60vw;
   background: transparent;
-  left: 130px;
+  left: -5px;
   position: relative;
 }
 .task-item{
@@ -583,4 +584,18 @@ form{
   padding-bottom: 6px;
   padding-top: 5px;
   padding-left: 10px;
+}
+#add-task2:hover i{
+  border-radius: 50%;
+  background-color: #d05656;
+}
+#add-task2:hover p{
+  color: darkred;
+}
+#add-task2 i{
+    color: #c81313;
+}
+.task-item span{
+    width: 50vw;
+    overflow: hidden;
 }

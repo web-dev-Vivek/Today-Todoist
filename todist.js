@@ -376,6 +376,29 @@ function addTask(inputId, taskListId, elementsToHide) {
   checkboxImage.style.display = 'none'; // Initially hide the checkbox image
   checkboxImage.style.position = 'relative'
   checkboxImage.style.right = '27px'
+  checkboxImage.setAttribute('id', 'checkbox');
+
+  const rename = document.createElement('img');
+  rename.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAACWlpYwMDD7+/vx8fHKysoSEhJWVlbh4eHNzc3GxsZfX18PDw8+Pj7v7+9QUFAXFxc3NzdaWlro6OiPj49CQkIiIiKenp7a2tqxsbG5ublISEh0dHRlZWUJCQkcHByJvGXqAAADdUlEQVR4nO2d2VYjMQxEaUgPs5KwZBKWAf7/K2fCGThZ3N2y7FbJou5jHjq6lG3Fdk44OyOEEEIIIYQQQgghhBBCCCGEEEII+bTcP5xvH+/QVczH46Z74+o7upJ56J+6D/6gi5mD/qXb4ye6nPosDwQDKva/ui60Yn/sF02xv0wYRlJMJbjjFl1YLdIJBkpxKMEwisuTVTTYQO1fxgQDpHjc6MMpnjb6YIpji0wIxeE2EURRluCORldUaYLNpriU+zWq+Jxl2ORA/Zqn2GKKn0BxFV+RKR7zjK5XQWaKa3S9CjIVWzzxz1NsMcQ8xQ262inu7hMvZimal5zHvw3vt8TLOYq+J+LbbiKlmNE0evOqM/h/6FSWonnVGXzsB0tS9Nzz93b0BSn+MK9bzMGOXq14Y163mKMzGa2i35X05Ohep+j3GwyJo3uN4hfzwqUk7yZSiretCqaP7nNTdCw4VHJeio7n4PDBb06KDSaYl2KTCeak6DjBqQtQmaJjwenLF4miY0HBDa9AsXHB6eXGsaD0fnB8v+hYcPJbFqOK7wO12TZxSGpTtPKeYIbfSIpBEhxSXHlOUD4HxxQDJTik6BVhH2xXUSnYjqJqiLakqFhk2lLsrwsEPZ+HvpPZ6NtLsTBB/4pFc7AFxQoJ7ligPQYpaBP7+L0/iy9YZ4g6FqyxyLje8IZPsIofE8TBOSjDcYLh+2AdQQ5RGFxkZDhOsIofE8QRfw6GbxPak20KOiH+EK2zyAS7HzzFcYJV/JggDjb65gXD90EKti5YxY9tAgcTlMEEYYz/Mp4YxwlG/6g2/ct4IvwOUTZ6GY4TZJsQwQRhhG8T8RMM3yZsBRdKCgTr3A9KBW+Uz3/VC5p+VFtoBbsLtaH6LQ+QJnilfge94UUNQWmjL/hzYg3nTxBsOPciAzcUCi5KEoQamiSINLRJEGhoschADY2GKM5Q+lWu4gRRhnYJggzN5iDK0DJBiKFpgghDY0F7Q2tBc0PDNoExNE/Q2lCa4O96graGtm0CYIhI0NQQkqClISZBQ0P7NmFsKB2itRM0M0QNUTNDQKO3NQQmaGOITNDEUJrg0/SjfBpiEzQwhM5BC0O44NyGuEZfwXAjeLowQf0VtgD9v4Dank+xlt7wPqwnn6VnqzYkhBBCCCGEEEIIIYQQQgghhBBCCKnKXy2ZQHAR8ZBQAAAAAElFTkSuQmCC'; // Replace with your checkbox image URL
+  rename.style.width = '24px'; // Optional: set the image width
+  rename.style.height = '24px'; // Optional: set the image height
+  rename.style.display = 'block'; // Initially hide the checkbox image
+  rename.style.position = 'relative'
+  rename.style.left = '2vw'
+  rename.style.top = '5px'
+  rename.setAttribute('id', 'rename');
+
+
+
+  const deletetext = document.createElement('img');
+  deletetext.src = 'data:image/png;base64,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'; // Replace with your checkbox image URL
+  deletetext.style.width = '24px'; // Optional: set the image width
+  deletetext.style.height = '24px'; // Optional: set the image height
+  deletetext.style.display = 'block'; // Initially hide the checkbox image
+  deletetext.style.position = 'relative'
+  deletetext.style.left = '3vw'
+  deletetext.style.top = '3px'
+  deletetext.setAttribute('id', 'deletetext');
   // Add an event listener to the circle image
   circleImage.addEventListener('click', function() {
     if (checkboxImage.style.display === 'none') {
@@ -385,6 +408,8 @@ function addTask(inputId, taskListId, elementsToHide) {
     }
   });
 
+
+
   // Create a text element for the task
   const taskText = document.createElement('span');
   taskText.textContent = taskInput.value;
@@ -393,6 +418,8 @@ function addTask(inputId, taskListId, elementsToHide) {
   taskDiv.appendChild(circleImage);
   taskDiv.appendChild(checkboxImage);
   taskDiv.appendChild(taskText);
+  taskDiv.appendChild(rename);
+  taskDiv.appendChild(deletetext);
 
   // Add the new task div to the task list
   taskList.appendChild(taskDiv);
@@ -414,23 +441,23 @@ function addTask(inputId, taskListId, elementsToHide) {
 
 // Event listener for input1
 document.getElementById('kaam-add1').addEventListener('click', function() {
-  addTask('input1', 'taskList', ['add-task2', 'picture1', 'picture2']);
+  addTask('input1', 'taskList', ['x', 'picture1', 'picture2']);
 });
 
 document.getElementById('input1').addEventListener('keypress', function(event) {
   if (event.key === 'Enter') {
-    addTask('input1', 'taskList', ['add-task2', 'picture1', 'picture2']);
+    addTask('input1', 'taskList', ['x', 'picture1', 'picture2']);
   }
 });
 
 // Event listener for input2
 document.getElementById('kaam-add2').addEventListener('click', function() {
-  addTask('input2', 'taskList', ['add-task2', 'picture1', 'picture2']);
+  addTask('input2', 'taskList', ['x', 'picture1', 'picture2']);
 });
 
 document.getElementById('input2').addEventListener('keypress', function(event) {
   if (event.key === 'Enter') {
-    addTask('input2', 'taskList', ['add-task2', 'picture1', 'picture2']);
+    addTask('input2', 'taskList', ['x', 'picture1', 'picture2']);
   }
 });
 
@@ -484,8 +511,35 @@ a11.addEventListener('click', function(event) {
 
 document.getElementById('toggleButton').addEventListener('click', function() {
     var navbar = document.getElementById('navbar');
+    var toggleButton = document.getElementById('toggleButton');
+    
+    // Toggle the 'hidden' class on the navbar
     navbar.classList.toggle('hidden');
+    
+    // Check if the navbar is hidden or visible, and adjust the button's position accordingly
+    if (navbar.classList.contains('hidden')) {
+        toggleButton.style.left = '0px'; // Navbar is hidden, move the button to the left
+    } else {
+        toggleButton.style.left = '245px'; // Navbar is visible, move the button to the right
+    }
 });
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
